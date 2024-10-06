@@ -1,15 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  
+  <div>
+    <MyHome/>
+    <router-view></router-view>
+    <MyFooter/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MyHome from './components/MyHome.vue';
+import MyFooter from './components/MyFooter.vue';
+import { computed } from 'vue';
+import { useRoute } from 'vue-router';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MyHome,
+    MyFooter,
+  },
+  setup() {
+    const route = useRoute();
+    
+    const isHomePage = computed(() => {
+      return route.path === '/';
+    });
+
+    return { isHomePage };
   }
 }
 </script>
