@@ -1,6 +1,20 @@
 <template>
+     <body
+      style="
+        background-color: #e6ffee;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 200vh;
+        margin: 0;
+        padding-top: 10px;
+      "
+    >
   <div class="container mt-5">
-    <h1 class="text-center mb-4">Player List</h1>
+    <h1 class="text-center mb-4" style="text-decoration: underline; text-decoration-skip-ink: none; font-weight: bold; color: black;">
+  Player List
+</h1>
+
     <div class="row">
       <div class="col-md-4" v-for="player in players" :key="player.id">
         <div class="card mb-4" style="background-color: #e6ffee;">
@@ -22,6 +36,7 @@
       </div>
     </div>
   </div>
+</body>
   </template>
   
   <script>
@@ -29,7 +44,7 @@
     data() {
       return {
         players: [
-          {
+           {
             id: 1,
             name: 'John Doe',
             dob: '1995-06-15',
@@ -79,6 +94,64 @@
             district: 'Birtamode',
             state: 'Province 1',
           },
+          {
+            id: 2,
+            name: 'Jane Smith',
+            dob: '1998-04-22',
+            role:'Player',
+            palika: 'Green Valley',
+            ward: '12',
+            district: 'Birtamode',
+            state: 'Province 1',
+          },
+          {
+            id: 2,
+            name: 'Jane Smith',
+            dob: '1998-04-22',
+            role:'Player',
+            palika: 'Green Valley',
+            ward: '12',
+            district: 'Birtamode',
+            state: 'Province 1',
+          },{
+            id: 2,
+            name: 'Jane Smith',
+            dob: '1998-04-22',
+            role:'Player',
+            palika: 'Green Valley',
+            ward: '12',
+            district: 'Birtamode',
+            state: 'Province 1',
+          },
+          {
+            id: 2,
+            name: 'Jane Smith',
+            dob: '1998-04-22',
+            role:'Player',
+            palika: 'Green Valley',
+            ward: '12',
+            district: 'Birtamode',
+            state: 'Province 1',
+          },{
+            id: 2,
+            name: 'Jane Smith',
+            dob: '1998-04-22',
+            role:'Player',
+            palika: 'Green Valley',
+            ward: '12',
+            district: 'Birtamode',
+            state: 'Province 1',
+          },
+          {
+            id: 2,
+            name: 'Jane Smith',
+            dob: '1998-04-22',
+            role:'Player',
+            palika: 'Green Valley',
+            ward: '12',
+            district: 'Birtamode',
+            state: 'Province 1',
+          },
         ],
       };
     },
@@ -105,5 +178,6 @@
   border-radius: 5px;
   width: 45%;
 }
+
   </style>
   

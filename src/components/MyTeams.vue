@@ -58,11 +58,11 @@
           { id: 11, name: 'Liam Anderson', role: 'Midfielder', ward: '7', palika: 'Central Town', district: 'Birtamode', state: 'Province 1' },
           { id: 12, name: 'Isabella Thomas', role: 'Forward', ward: '7', palika: 'Central Town', district: 'Birtamode', state: 'Province 1' },
           { id: 13, name: 'Noah Jackson', role: 'Defender', ward: '7', palika: 'Central Town', district: 'Birtamode', state: 'Province 1' },
-          { id: 14, name: 'Mia White', role: 'Midfielder', ward: '7', palika: 'Central Town', district: 'Birtamode', state: 'Province 1' },
+          { id: 14, name: 'Mia Pink', role: 'Astrologer', ward: '7', palika: 'Central Town', district: 'Birtamode', state: 'Province 1' },
           { id: 15, name: 'Ethan Harris', role: 'Forward', ward: '7', palika: 'Central Town', district: 'Birtamode', state: 'Province 1' },
           { id: 16, name: 'Charlotte Martin', role: 'Manager', ward: '3', palika: 'East Village', district: 'Birtamode', state: 'Province 1' },
           { id: 17, name: 'Oliver Lee', role: 'Coach', ward: '3', palika: 'East Village', district: 'Birtamode', state: 'Province 1' },
-          { id: 18, name: 'Lucas Clark', role: 'Assistant Coach', ward: '3', palika: 'East Village', district: 'Birtamode', state: 'Province 1' },
+          { id: 18, name: 'Pinky Cat', role: 'Assistant Coach', ward: '3', palika: 'East Village', district: 'Birtamode', state: 'Province 1' },
         ],
         team: [],
       };
