@@ -8,6 +8,9 @@ import MyTeams from './components/MyTeams.vue';
 import WardLogin from './components/WardLogin.vue';
 import MunicipalityLogin from './components/MunicipalityLogin.vue';
 
+import WardAdmin from './components/WardAdmin.vue';
+import PalikaAdmin from './components/PalikaAdmin.vue';
+
 const routes = [
   { path: '/', component: MyLandingPage },
   { path: '/about-us', component: AboutUs },
@@ -17,6 +20,9 @@ const routes = [
   { path: '/teams', component: MyTeams },
   { path: '/ward-login', component: WardLogin },
   { path: '/municipality-login', component: MunicipalityLogin },
+
+  { path: '/wardadmin', component: WardAdmin }, // Add the admin route
+  { path: '/palikaadmin', component: PalikaAdmin }, // Add the admin route
 ];
 
 const router = createRouter({

@@ -46,8 +46,7 @@
         Municipality Login
       </h3>
 
-      <form style="margin-bottom: 0">
-        <!-- Remove bottom margin of form -->
+      <form @submit.prevent="login" style="margin-bottom: 0">
         <!-- Username -->
         <div class="mb-4">
           <label
@@ -67,6 +66,7 @@
             type="text"
             class="form-control form-control-lg"
             id="username"
+            v-model="username"
             placeholder="Enter your username"
             required
           />
@@ -91,6 +91,7 @@
             type="password"
             class="form-control form-control-lg"
             id="password"
+            v-model="password"
             placeholder="Enter your password"
             required
           />
@@ -112,14 +113,36 @@
         >
           Login
         </button>
+
+        <!-- Error Message -->
+        <div v-if="errorMessage" style="color: red; margin-top: 15px;">{{ errorMessage }}</div>
       </form>
     </div>
   </body>
 </template>
-  
-  <script>
+
+<script>
 export default {
   name: "MunicipalityLogin",
+  data() {
+    return {
+      username: "",
+      password: "",
+      errorMessage: "",
+    };
+  },
+  methods: {
+  login() {
+    const validUsername = "palikaadmin";
+    const validPassword = "palikaadmin";
+
+    if (this.username === validUsername && this.password === validPassword) {
+      // Redirect to the admin page after successful login
+      this.$router.push("/palikaadmin");
+    } else {
+      this.errorMessage = "Invalid username or password";
+    }
+  },
+}
 };
 </script>
-  
